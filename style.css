@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+:root{
+    --primary-color:rgb(116, 116, 116);
+    --primary-color-dark:rgb(49, 40, 40);
+    --secondary-color:rgb(36,35,35);
+    --text-light:rgb(238, 224, 207);
+    --text-dark:black;
+    --max-width:1200px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: poppins, sans-serif;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(95, 95, 94);
+    z-index: 99;
+}
+.nav{
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem, 2rem;
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: 0.2s;
+    list-style: none;
+}
+ul li a{
+    font-weight: 600;
+    padding: 1.5rem, 2rem;
+    border: 2px solid transparent;
+    color: var(--text-dark);
+    transition: 0.2s;
+    text-decoration: none;
+}
+ul li a:hover{
+    border-bottom-color:var(--secondary-color) ;
+    border-top-color:var(--secondary-color) ;
+    color: var(--secondary-color);
+}
+.section{
+    padding: 8rem 2rem 2rem 2rem;
+    max-width: var(--max-width);
+    margin: auto;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+.music-player{
+    width: 100%;
+    background-color: rgb(200, 200, 200);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+.cover{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.info .title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.info .artist{
+    display: flex;
+    font-size: 1rem;
+    color: var(--primary-color-dark);
+}
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.controls button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--primary-color-dark);
+    transition: color 0.2s;
+}
+.controls button:hover {
+    color: var(--secondary-color);
+}
+.info .artist{
+    display: flex;
+    flex-direction: column;
+}
+.info ul{
+    display: inline;
+}
+.info ul li{
+    margin-right: 40px;
+    text-align:justify ;
+}
+#songthree{
+    margin-left: 90px;   
+}
+
+#songone{
+    margin-right: 90px;   
+}
+.players {
+    display: flex;
+    justify-content: center;
+    gap: 40px;          /* space between the 3 players */
+}
+
+.player-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.controls {
+    display: flex;
+    gap: 8px;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.progress {
+    width: 120px;
+}
+
+.Playlist{
+    margin-top: 5%;
+}
